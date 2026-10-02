@@ -409,11 +409,15 @@
     width: 300px;
     height: 1px;
     background: var(--blue);
-    margin: 12px auto 0;
+    margin: 12px 0 0;
+}
+
+#contact .section-title {
+    text-align: left;
 }
 
 #contact .section-title h2 {
-    item-align: left;
+    text-align: left ;
 }
 
 #form-result {
