@@ -1,0 +1,472 @@
+/* ========================================
+   CONTACT
+   Contact details, copy actions, form styling, and responsive rules.
+======================================== */
+
+.contact-container {
+    width: 100%;
+    max-width: var(--content-width);
+    margin-inline: auto;
+}
+
+.contact-left button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    padding: 11px 22px;
+    border: 1px solid rgba(91,220,255,.5);
+    border-radius: 100px;
+    background: linear-gradient(135deg,#5bdcff,#08b3e6);
+    color: #00131b;
+    font-size: 12px;
+    font-weight: 700;
+    box-shadow: 0 8px 22px rgba(8,189,245,.15);
+}
+
+.contact-left button:hover {
+    background: var(--blue-bright);
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: .85fr 1.15fr;
+    align-items: start;
+    gap: 50px;
+}
+
+.contact-right h3 {
+    font-size: clamp(28px,3.2vw,40px);
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.contact-right>p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.7;
+    margin: 16px 0 22px;
+}
+
+.contact-info {
+    display: grid;
+    gap: 12px;
+}
+
+.copy-item,
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--muted);
+    font-size: 13px;
+    cursor: pointer;
+    overflow-wrap: anywhere;
+}
+
+.copy-item i,
+.contact-link i {
+    color: var(--blue);
+    font-size: 18px;
+}
+
+.copied {
+    display: none;
+    color: var(--blue-bright);
+}
+
+.copied.show {
+    display: inline;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 0;
+}
+
+.contact-inputs {
+    width: 100%;
+    height: 46px;
+    padding: 12px 16px;
+    color: var(--text);
+    background: #061923;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    font-size: 13px;
+}
+
+.contact-inputs::placeholder {
+    color: var(--muted);
+}
+
+.contact-inputs:focus {
+    outline: 2px solid var(--blue);
+    outline-offset: 2px;
+}
+
+.contact-left textarea {
+    height: 125px;
+    resize: vertical;
+}
+
+.contact-left button {
+    width: 100%;
+    min-height: 44px;
+}
+
+@media (max-width:992px) {
+    .contact-container {
+        gap: 28px;
+    }
+}
+
+@media (max-width:700px) {
+    #contact {
+        min-height: calc(100svh - var(--nav-offset));
+    }
+
+    .contact-container {
+        grid-template-columns: minmax(0,1fr);
+    }
+
+    .contact-container {
+        gap: 24px;
+    }
+}
+
+#contact {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 24px 5% 30px;
+    scroll-margin-top: 0;
+}
+
+#contact .contact-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: 48px;
+    width: 100%;
+    max-width: var(--content-width, 1090px);
+    margin-inline: auto;
+}
+
+#contact .contact-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
+}
+
+#contact .contact-right h3 {
+    margin: 0 0 14px;
+    font-size: clamp(28px, 3.2vw, 40px);
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--text, #effbff);
+}
+
+#contact .contact-right > p {
+    margin: 0 0 22px;
+    color: var(--muted, #9bb9c6);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+#contact .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 0;
+}
+
+#contact .copy-item,
+#contact .contact-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--muted, #9bb9c6);
+    font-size: 13px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+#contact .copy-item i,
+#contact .contact-link i {
+    flex-shrink: 0;
+    color: var(--blue, #08bdf5);
+    font-size: 20px;
+}
+
+#contact .copy-item:hover,
+#contact .contact-link:hover {
+    color: var(--blue-bright, #5bdcff);
+}
+
+#contact .copied {
+    display: none;
+    color: var(--blue-bright, #5bdcff);
+    font-size: 11px;
+}
+
+#contact .copied.show {
+    display: inline;
+    opacity: 1;
+}
+
+#contact .contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+}
+
+#contact .contact-inputs {
+    width: 100%;
+    max-width: none;
+    height: 46px;
+    padding: 12px 18px;
+    font: inherit;
+    font-size: 13px;
+    color: var(--text, #effbff);
+    background: rgba(5, 22, 31, 0.8);
+    border: 1px solid var(--line, rgba(91, 220, 255, 0.19));
+    border-radius: 24px;
+}
+
+#contact .contact-left textarea {
+    height: 120px;
+    min-height: 100px;
+    padding: 14px 18px;
+    border-radius: 16px;
+    resize: vertical;
+}
+
+#contact .contact-inputs::placeholder {
+    color: var(--muted, #9bb9c6);
+}
+
+#contact .contact-inputs:focus {
+    outline: 2px solid var(--blue, #08bdf5);
+    outline-offset: 2px;
+}
+
+#contact .contact-left button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: none;
+    height: 44px;
+    min-height: 44px;
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #00131b;
+    background: linear-gradient(135deg, #5bdcff, #08b3e6);
+    border: 0;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(8, 189, 245, 0.15);
+    cursor: pointer;
+}
+
+#contact .contact-left button:hover {
+    background: var(--blue-bright, #5bdcff);
+}
+
+#contact .plant {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    #contact {
+        min-height: 0;
+        padding: 20px 5% 24px;
+    }
+
+    #contact .contact-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+    }
+}
+
+#contact {
+    padding-top: 55px;
+    padding-bottom: 45px;
+}
+
+#contact .contact-container {
+    gap: 60px;
+}
+
+#contact .contact-left {
+    gap: 16px;
+}
+
+#contact .contact-inputs {
+    height: 54px;
+    font-size: 14px;
+}
+
+#contact .contact-left textarea {
+    height: 160px;
+}
+
+#contact .contact-left button {
+    height: 50px;
+}
+
+#contact .contact-right h3 {
+    font-family: var(--font, "Manrope", sans-serif);
+    font-size: clamp(28px, 3.2vw, 40px);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: normal;
+}
+
+@media (max-width: 700px) {
+    #contact {
+        padding: 35px 5%;
+    }
+
+    #contact .contact-container {
+        gap: 28px;
+    }
+}
+
+#contact .contact-right > p,
+#contact .copy-item,
+#contact .contact-link {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+#contact .contact-info {
+    gap: 18px;
+}
+
+#contact .copy-item i,
+#contact .contact-link i {
+    font-size: 24px;
+}
+
+#contact button.copy-item {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    font-family: inherit;
+    text-align: left;
+}
+
+#contact .copied {
+    font-size: 12px;
+}
+
+#contact {
+    margin-top: 0;
+    padding-top: 70px;
+    min-height: calc(100svh - var(--nav-offset, 90px));
+}
+
+#contact .contact-container {
+    align-items: start;
+}
+
+#contact {
+    height: auto !important;
+    min-height: 0 !important;
+    padding-bottom: 40px !important;
+    margin-bottom: 0 !important;
+}
+
+#contact .contact-container,
+#contact .contact-left,
+#contact .contact-right {
+    height: auto !important;
+    min-height: 0 !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+#contact .section-title h2::after {
+    content: "";
+    display: none;
+}
+
+#contact .section-title h2::after {
+    display: block;
+    width: 300px;
+    height: 1px;
+    background: var(--blue);
+    margin: 12px auto 0;
+}
+
+#contact .section-title h2 {
+    item-align: left;
+}
+
+#form-result {
+    min-height: 20px;
+    margin: 2px 0 0;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+    #contact .contact-left {
+        display: none;
+    }
+}
+
+@media (min-width: 1900px) {
+    #contact .contact-container {
+        padding-block: 40px;
+    }
+
+    #contact .section-title h2 {
+        font-size: 40px;
+    }
+
+    #contact .contact-right > p {
+        font-size: 30px;
+        margin-top: 18px;
+        margin-bottom: 20px;
+    }
+
+    #contact .contact-info {
+        gap: 16px;
+    }
+
+    #contact .copy-item,
+    #contact .contact-link {
+        font-size: 24px;
+    }
+
+    #contact .contact-inputs {
+        min-height: 56px;
+        padding: 0 20px;
+        font-size: 30px;
+    }
+
+    #contact textarea.contact-inputs {
+        min-height: 150px;
+        padding-top: 24px;
+    }
+
+    #contact .contact-left button[type="submit"] {
+        min-height: 52px;
+        font-size: 20px;
+    }
+}

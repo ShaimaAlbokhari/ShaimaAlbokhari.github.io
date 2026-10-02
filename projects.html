@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>
+   Projects | Shaima Albokhari
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Allura&display=swap" rel="stylesheet">
+  <link href="style-cinematic.css" rel="stylesheet">
+  <link href="logo-fish.svg" rel="icon" type="image/svg+xml">
+ </head>
+ <body>
+  <section class="projects" id="projects">
+   <h2>
+    My Projects
+   </h2>
+   <p class="projects-subtitle">
+    Exploring data, AI, and web development through practical projects.
+   </p>
+   <div aria-label="Filter projects" class="filter-buttons">
+    <button aria-pressed="true" class="filter-btn active" data-filter="all" type="button">
+     All Projects
+    </button>
+    <button aria-pressed="false" class="filter-btn" data-filter="graduation" type="button">
+     Graduation Project
+    </button>
+    <button aria-pressed="false" class="filter-btn" data-filter="ai" type="button">
+     AI
+    </button>
+    <button aria-pressed="false" class="filter-btn" data-filter="data" type="button">
+     Data Analysis
+    </button>
+    <button aria-pressed="false" class="filter-btn" data-filter="web" type="button">
+     Web
+    </button>
+   </div>
+   <div class="projects-container">
+    <!-- ========== GRADUATION RESEARCH ========== -->
+    <div class="project-card" data-category="graduation ai">
+     <div class="project-image project-cover">
+      <img alt="Can Machines Think Like Us research project" src="graduation_cover.svg">
+     </div>
+     <div class="project-content">
+      <h3 class="project-title">
+       Can Machines Think Like Us?
+      </h3>
+      <p class="project-description">
+       Evaluated large language models on Arabic and English
+                        verbal analogy questions using prompt engineering
+                        strategies to analyze their reasoning performance.
+      </p>
+      <div class="project-tags">
+       <span>
+        Python
+       </span>
+       <span>
+        LLMs
+       </span>
+       <span>
+        NLP
+       </span>
+      </div>
+      <div class="project-links">
+       <a class="code-link" href="https://github.com/ShaimaAlbokhari/llm-verbal-analogical-reasoning" rel="noopener noreferrer" target="_blank">
+        <i aria-hidden="true" class="fa-solid fa-file-lines">
+        </i>
+        Repository
+       </a>
+       <a class="demo-link" href="Poster.pdf" rel="noopener noreferrer" target="_blank">
+        Poster
+        <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square">
+        </i>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- ========== LUBB ========== -->
+    <div class="project-card" data-category="web ai graduation">
+     <div class="project-image project-cover">
+      <img alt="Lubb &mdash; Verbal Analogies" src="lubb_cover.svg">
+     </div>
+     <div class="project-content">
+      <h3 class="project-title">
+       Lubb &mdash; Verbal Analogies
+      </h3>
+      <p class="project-description">
+       A bilingual AI tool for solving verbal analogies with
+                        explanations and timed quizzes.
+      </p>
+      <div class="project-tags">
+       <span>
+        JavaScript
+       </span>
+       <span>
+        LLM APIs
+       </span>
+       <span>
+        NLP
+       </span>
+      </div>
+      <div class="project-links">
+       <a class="code-link" href="https://github.com/ShaimaAlbokhari/lubb-ai-verbal-analogies" rel="noopener noreferrer" target="_blank">
+        <i aria-hidden="true" class="fa-brands fa-github">
+        </i>
+        Code
+       </a>
+       <a class="demo-link" href="https://lubb-tu.github.io/" rel="noopener noreferrer" target="_blank">
+        Live Demo
+        <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square">
+        </i>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- ========== SCAN ========== -->
+    <div class="project-card" data-category="ai data graduation">
+     <div class="project-image project-cover">
+      <img alt="SCAN dataset standardization" src="scan_cover.svg">
+     </div>
+     <div class="project-content">
+      <h3 class="project-title">
+       SCAN Dataset Standardization
+      </h3>
+      <p class="project-description">
+       Cleaned and standardized the SCAN verbal analogy
+                        dataset, reducing an average of 70 answer choices per
+                        question into a consistent four-option format.
+      </p>
+      <div class="project-tags">
+       <span>
+        Python
+       </span>
+       <span>
+        Data Cleaning
+       </span>
+       <span>
+        NLP
+       </span>
+      </div>
+      <div class="project-links">
+       <a class="code-link" href="https://github.com/ShaimaAlbokhari/scan-dataset-preprocessing" rel="noopener noreferrer" target="_blank">
+        <i aria-hidden="true" class="fa-brands fa-github">
+        </i>
+        Code
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- ========== STAYAWAKE ========== -->
+    <div class="project-card" data-category="ai">
+     <div class="project-image project-cover">
+      <img alt="StayAwake &mdash; Fatigue Detection" src="stayawake_cover.svg">
+     </div>
+     <div class="project-content">
+      <h3 class="project-title">
+       StayAwake &mdash; Fatigue Detection
+      </h3>
+      <p class="project-description">
+       A driver fatigue detection system using facial
+                        features, a fine-tuned ResNet18 model, and
+                        real-time alerts.
+      </p>
+      <div class="project-tags">
+       <span>
+        PyTorch
+       </span>
+       <span>
+        OpenCV
+       </span>
+       <span>
+        MediaPipe
+       </span>
+      </div>
+      <div class="project-links">
+       <a class="code-link" href="https://github.com/ShaimaAlbokhari/stayawake-fatigue-detection" rel="noopener noreferrer" target="_blank">
+        <i aria-hidden="true" class="fa-brands fa-github">
+        </i>
+        Code
+       </a>
+       <a class="demo-link" href="stayawake_demo.mp4" rel="noopener noreferrer" target="_blank">
+        Demo Video
+        <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square">
+        </i>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- ========== MNIST ========== -->
+    <div class="project-card" data-category="ai data">
+     <div class="project-image project-cover">
+      <img alt="Handwritten digit classification predictions" src="mnist cover.svg">
+     </div>
+     <div class="project-content">
+      <h3 class="project-title">
+       Handwritten Digit Classification
+      </h3>
+      <p class="project-description">
+       Built a multilayer neural network from scratch with
+                        NumPy to classify handwritten MNIST digits and
+                        evaluate model accuracy and generalization.
+      </p>
+      <div class="project-tags">
+       <span>
+        Python
+       </span>
+       <span>
+        NumPy
+       </span>
+       <span>
+        Neural Network
+       </span>
+      </div>
+      <div class="project-links">
+       <a class="code-link" href="https://github.com/ShaimaAlbokhari/mnist-multilayer-neural-network" rel="noopener noreferrer" target="_blank">
+        <i aria-hidden="true" class="fa-brands fa-github">
+        </i>
+        Code
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- ========== DINO RUNNER ========== -->
+    <div class="project-card" data-category="web">
+     <div class="project-image project-cover">
+      <img alt="Dino Runner Game" src="dino_cover.svg">
+     </div>
+     <div class="project-content">
+      <h3 class="project-title">
+       Dino Runner Game
+      </h3>
+      <p class="project-description">
+       A browser-based endless runner game built with
+                        Phaser.js, featuring player controls, obstacle
+                        collisions, scoring, and game-over states.
+      </p>
+      <div class="project-tags">
+       <span>
+        JavaScript
+       </span>
+       <span>
+        Phaser.js
+       </span>
+       <span>
+        HTML/CSS
+       </span>
+      </div>
+      <div class="project-links">
+       <a class="code-link" href="https://github.com/ShaimaAlbokhari/dino-runner-phaser" rel="noopener noreferrer" target="_blank">
+        <i aria-hidden="true" class="fa-brands fa-github">
+        </i>
+        Code
+       </a>
+       <a class="demo-link" href="https://shaimaalbokhari.itch.io/dino-world" rel="noopener noreferrer" target="_blank">
+        Live Demo
+        <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square">
+        </i>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- ========== BREAST CANCER CLASSIFICATION ========== -->
+    <div class="project-card" data-category="ai data">
+     <div class="project-image project-cover">
+      <img alt="Breast Cancer Classification using Perceptron" src="breast-cancer-cover.svg">
+     </div>
+     <div class="project-content">
+      <h3 class="project-title">
+       Breast Cancer Classification
+      </h3>
+      <p class="project-description">
+       Built a binary Perceptron classifier to distinguish
+                        benign and malignant breast tumors using the Wisconsin
+                        Diagnostic Breast Cancer dataset.
+      </p>
+      <div class="project-tags">
+       <span>
+        Python
+       </span>
+       <span>
+        NumPy
+       </span>
+       <span>
+        Perceptron
+       </span>
+      </div>
+      <div class="project-links">
+       <a class="code-link" href="https://github.com/ShaimaAlbokhari/breast-cancer-perceptron" rel="noopener noreferrer" target="_blank">
+        <i aria-hidden="true" class="fa-brands fa-github">
+        </i>
+        Code
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- ========== ROUTE PLANNING ========== -->
+    <div class="project-card" data-category="ai">
+     <div class="project-image project-cover">
+      <img alt="Romania map used for route planning" src="romania-cover.svg">
+     </div>
+     <div class="project-content">
+      <h3 class="project-title">
+       Intelligent Route Planning
+      </h3>
+      <p class="project-description">
+       Implemented and compared BFS, Greedy Best-First
+                        Search, and A* Search to find routes from Arad to
+                        Bucharest using a weighted city graph.
+      </p>
+      <div class="project-tags">
+       <span>
+        Python
+       </span>
+       <span>
+        BFS
+       </span>
+       <span>
+        A* Search
+       </span>
+      </div>
+      <div class="project-links">
+       <a class="code-link" href="https://github.com/ShaimaAlbokhari/intelligent-route-planning" rel="noopener noreferrer" target="_blank">
+        <i aria-hidden="true" class="fa-brands fa-github">
+        </i>
+        Code
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- ========== WaRDTHON ========== -->
+    <div class="project-card" data-category="web">
+     <div class="project-image project-cover">
+      <img alt="WardThon login and registration interface" src="wardthon_cover.svg">
+     </div>
+     <div class="project-content">
+      <h3 class="project-title">
+       WardThon &mdash; Login & Register
+      </h3>
+      <p class="project-description">
+       A front-end interface for login and registration,
+                        focused on form layout and visual design.
+      </p>
+      <div class="project-tags">
+       <span>
+        HTML
+       </span>
+       <span>
+        CSS
+       </span>
+       <span>
+        UI Design
+       </span>
+      </div>
+      <div class="project-links">
+       <a class="code-link" href="https://github.com/ShaimaAlbokhari/wardthon-login-register-ui" rel="noopener noreferrer" target="_blank">
+        <i aria-hidden="true" class="fa-brands fa-github">
+        </i>
+        Code
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- ========== PERSONAL PORTFOLIO ========== -->
+    <div class="project-card" data-category="web">
+     <div class="project-image project-cover">
+      <img alt="Personal portfolio website preview" src="portfolio_cover.svg">
+     </div>
+     <div class="project-content">
+      <h3 class="project-title">
+       Personal Portfolio
+      </h3>
+      <p class="project-description">
+       A responsive portfolio website showcasing my Data,
+                        AI, and web development projects, with filters,
+                        a certificate carousel, and a contact form.
+      </p>
+      <div class="project-tags">
+       <span>
+        HTML
+       </span>
+       <span>
+        CSS
+       </span>
+       <span>
+        JavaScript
+       </span>
+      </div>
+      <div class="project-links">
+       <a class="code-link" href="https://github.com/ShaimaAlbokhari/ShaimaAlbokhari.github.io" rel="noopener noreferrer" target="_blank">
+        <i aria-hidden="true" class="fa-brands fa-github">
+        </i>
+        Code
+       </a>
+       <a class="demo-link" href="https://ShaimaAlbokhari.github.io" rel="noopener noreferrer" target="_blank">
+        Live Demo
+        <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square">
+        </i>
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+   <a class="view-all-btn" href="index.html">
+    <i aria-hidden="true" class="fa-solid fa-arrow-left">
+    </i>
+    Back to Home
+   </a>
+  </section>
+  <script src="script.js">
+  </script>
+ </body>
+</html>

@@ -1,0 +1,30 @@
+/* ========================================
+   PORTFOLIO VARIABLES
+   Colors, typography, sizing tokens, and global responsive variables.
+======================================== */
+
+:root {
+    --ink: #020a10;
+    --blue: #08bdf5;
+    --blue-bright: #5bdcff;
+    --text: #effbff;
+    --muted: #9bb9c6;
+    --line: rgba(91,220,255,.19);
+    --content-width: 1090px;
+    --nav-offset: 100px;
+    --nav-height: 75px;
+    --font: "Manrope",sans-serif;
+    --radius-card: 20px;
+    --radius-small: 14px;
+    --radius-pill: 100px;
+}
+
+:root {
+    --font: "Manrope", sans-serif;
+}
+
+@media (min-width: 1400px) {
+    :root {
+        --content-width: 1500px !important;
+    }
+}
